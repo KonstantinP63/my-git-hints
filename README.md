@@ -558,3 +558,9 @@ Git помечает проблемные места специальными м
 ## HTTPS vs SSH
 * **HTTPS** (рекомендуется для начала): Ссылки вида `https://github.com...`. Авторизация через браузер.
 * **SSH**: Ссылки вида `git@github.com:...`. Требует настройки SSH-ключей в системе.
+
+## Работа через SSH (SSH-ключи)
+Позволяет отправлять код без ввода логина/пароля в браузере.
+* Ссылка репозитория: `git@github.com:username/repo.git`
+* **Проверка связи**: `ssh -T git@github.com`
+* **Смена протокола с HTTPS на SSH**: `git remote set-url origin git@github.com:user/repo.git`
