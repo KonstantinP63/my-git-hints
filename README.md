@@ -564,3 +564,9 @@ Git помечает проблемные места специальными м
 * Ссылка репозитория: `git@github.com:username/repo.git`
 * **Проверка связи**: `ssh -T git@github.com`
 * **Смена протокола с HTTPS на SSH**: `git remote set-url origin git@github.com:user/repo.git`
+
+## Проверка и смена протокола (HTTPS -> SSH)
+Если репозиторий уже создан, но нужно перейти на SSH:
+1. Проверить текущий URL: `git remote -v`
+2. Сменить на SSH: `git remote set-url origin git@github.com:USER/REPO.git`
+3. Проверить связь: `ssh -T git@github.com` (должно выдать "Hi username! You've successfully authenticated").
